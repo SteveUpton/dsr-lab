@@ -1,7 +1,7 @@
 import time
 import zmq
 
-HOST = '127.0.0.1'
+HOST = '0.0.0.0'
 PORT = '4444'
 
 _context = zmq.Context()
@@ -35,4 +35,4 @@ def hello_world():
     return quote
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0',port=5001)
+    app.run(debug=True,host='0.0.0.0',port=5000)
